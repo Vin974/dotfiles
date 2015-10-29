@@ -1,0 +1,24 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[user]
+	name = Vincent DIJOUX
+	email = vdijoux@jarvis-software.fr
+[core]
+	excludesfile = /Users/Vincent/.gitignore_global
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[merge "ours"]
+	driver = true
+[alias]
+	st = status
+	oneline = log --pretty=oneline --abbrev-commit --graph --decorate
+	lc = !git oneline ORIG_HEAD.. --stat --no-merges
+[github]
+	user = Vin974
