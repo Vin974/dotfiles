@@ -8,8 +8,6 @@ LIGHT_GREEN="\[\033[1;32m\]"
  LIGHT_GRAY="\[\033[1;30m\]"
  COLOR_NONE="\[\e[0m\]"
 
-alias la="ls -AlG"
-
 function parse_git_branch ()
 {
 	gitbranch=$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
@@ -20,7 +18,7 @@ function parse_git_branch ()
 
 function ps1 ()
 {
-	export PS1="\n$LIGHT_GRAY\A$RED \w$(parse_git_branch) $COLOR_NONE\$ $BLUE"
+	export PS1="$LIGHT_GRAY\A$RED \w$(parse_git_branch) $COLOR_NONE\$ "
 }
 
 PROMPT_COMMAND=ps1
