@@ -1,3 +1,5 @@
+export PATH="$HOME/bin:$HOME/.config/composer/vendor/bin:$PATH"
+
         RED="\[\033[0;31m\]"
      YELLOW="\[\033[0;33m\]"
       GREEN="\[\033[0;32m\]"

@@ -3,8 +3,9 @@
 	status = auto
 	branch = auto
 [core]
-	autocrlf = input
+	autocrlf = false
 	eol = lf
+	excludesfile = ~/.gitignore
 [merge "ours"]
 	driver = true
 [alias]
@@ -14,3 +15,9 @@
 	ci = commit
 	co = checkout
 	br = branch
+	a = !git add -A && git status -sb
+[credential]
+	helper = store
+[user]
+	email = dijoux.vin@gmail.com
+	name = Vincent DIJOUX
