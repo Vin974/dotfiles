@@ -21,3 +21,5 @@
 [user]
 	email = dijoux.vin@gmail.com
 	name = Vincent DIJOUX
+[push]
+    default = simple
